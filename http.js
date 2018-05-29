@@ -1,6 +1,20 @@
 var express = require("express");
+var compression = require("compression");
 var app = express();
+var fs = require('fs');
 
+
+var key = fs.readFileSync('private.key');
+var cert = fs.readFileSync('mydomain.crt');
+
+var options = {
+    key: key,
+    cert: cert
+};
 // Run static server
+app.use(compression());
 app.use(express.static(__dirname));
-app.listen(8080);
+
+var https = require('https');
+https.createServer(options, app).listen(8888);
+//app.listen(8888);
