@@ -1,0 +1,28 @@
+{
+  "name": "ch1",
+  "version": "1.0.0",
+  "description": "web performance ch1",
+  "main": "http.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ylzsmallsun/ch1-coyle.git"
+  },
+  "keywords": [
+    "https",
+    "web",
+    "performance"
+  ],
+  "author": "smallsun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ylzsmallsun/ch1-coyle/issues"
+  },
+  "homepage": "https://github.com/ylzsmallsun/ch1-coyle#readme",
+  "dependencies": {
+    "compression": "^1.7.2",
+    "express": "^4.16.3"
+  }
+}
